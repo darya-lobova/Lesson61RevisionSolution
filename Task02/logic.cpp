@@ -27,6 +27,5 @@ double calculate_arithmetical_mean_of_nonzero_elements(int* array, int size) {
 		return 0;
 	}
 
-
 	return sum / count;
 }

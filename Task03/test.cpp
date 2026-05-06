@@ -4,7 +4,7 @@
 void test01() {
 	int array[]{ -7, 2, 5, -4, -6, 11, 9 };
 	int size = 7;
-	int expected = 2;
+	int expected = 5;
 	print_test(array, size, expected, "test01");
 }
 
@@ -12,7 +12,7 @@ void test01() {
 void test02() {
 	int array[]{ 12, 4, 5, 7, 15, 4, 16, 12, 13, 7 };
 	int size = 10;
-	int expected = 4;
+	int expected = 8;
 	print_test(array, size, expected, "test02");
 }
 
@@ -52,7 +52,7 @@ void test06() {
 void test07() {
 	int array[]{ 1, 2, 3 };
 	int size = 3;
-	int expected = 1;
+	int expected = 2;
 	print_test(array, size, expected, "test07");
 }
 
@@ -60,7 +60,7 @@ void test07() {
 void test08() {
 	int array[]{ 1, 3, 2 };
 	int size = 3;
-	int expected = 1;
+	int expected = 3;
 	print_test(array, size, expected, "test08");
 }
 
@@ -68,7 +68,7 @@ void test08() {
 void test09() {
 	int array[]{ 3, 1, 2 };
 	int size = 3;
-	int expected = 2;
+	int expected = 3;
 	print_test(array, size, expected, "test09");
 }
 
@@ -76,7 +76,7 @@ void test09() {
 void test10() {
 	int array[]{ 5, 1 };
 	int size = 2;
-	int expected = 1;
+	int expected = 2;
 	print_test(array, size, expected, "test10");
 }
 
@@ -84,7 +84,7 @@ void test10() {
 void test11() {
 	int array[]{ 5, -5, 5, -5 };
 	int size = 4;
-	int expected = 2;
+	int expected = 4;
 	print_test(array, size, expected, "test11");
 }
 
@@ -92,6 +92,6 @@ void test11() {
 void test12() {
 	int array[]{ -1, -5, -8, -2 };
 	int size = 4;
-	int expected = 2;
+	int expected = 3;
 	print_test(array, size, expected, "test12");
 }
