@@ -15,9 +15,5 @@ int main() {
 	get_in_order(&a, &b, &c);
 	cout << "After: " << a << " " << b << " " << c << endl;
 
-
-
-
-
 	return 0;
 }

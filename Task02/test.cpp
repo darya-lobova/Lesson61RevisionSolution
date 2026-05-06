@@ -12,7 +12,7 @@ void test01() {
 void test02() {
 	int array[]{ 0 };
 	int size = 0;
-	double expected = 0.0;
+	double expected = 0;
 	print_test(array, size, expected, "test02");
 }
 
@@ -20,7 +20,7 @@ void test02() {
 void test03() {
 	int array[]{ 0 };
 	int size = -1;
-	double expected = 0.0;
+	double expected = 0;
 	print_test(array, size, expected, "test03");
 }
 
