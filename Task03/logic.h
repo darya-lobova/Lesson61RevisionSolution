@@ -1,0 +1,1 @@
+﻿int count_local_extreme_numbers(int* array, int size);
