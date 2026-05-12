@@ -31,28 +31,32 @@ int find_min_element(int* array, int size) {
 	return min;
 }
 
-	double calculate_arithmetical_mean_of_nonextreme_elements(int* array, int size) {
-		int max = find_max_element(array, size);
-		int min = find_min_element(array, size);
-		if (size <= 0) {
-			return 0;
-		}
-		
-		double sum = 0;
-		int count = 0;
+double calculate_arithmetical_mean_of_nonextreme_elements(int* array, int size) {
+    if (size <= 0 || array == nullptr) {
+        return 0;
+    }
 
-		for (int i = 1; i < size; i++)
-		{
-			if (*(array + i) != max || *(array + i) != min) {
-				sum += *(array + i);
-				count++;
-			}
-		}
-		
-		if (count == 0) {
-			return 0;
-		}
+    int max = array[0];
+    int min = array[0];
 
-		return sum / count;
+    for (int i = 1; i < size; i++) {
+        if (array[i] > max) max = array[i];
+        if (array[i] < min) min = array[i];
+    }
 
-	}
+    double sum = 0;
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (array[i] != max && array[i] != min) {
+            sum += array[i];
+            count++;
+        }
+    }
+
+    if (count == 0) {
+        return 0;
+    }
+
+    return sum / count;
+}
