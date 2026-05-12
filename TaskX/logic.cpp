@@ -18,3 +18,17 @@
 //	четверок 33.3 % (10)
 //	троек 23.3 % (7)
 //	двоек 3.4 % (1)
+
+void calculate_exam_results(int* array, int size, 
+    int& count5, int& count4, int& count3, int& count2) {
+    if (array == nullptr || size <= 0) return;
+
+    count5 = count4 = count3 = count2 = 0;
+
+    for (int* p = array; p < array + size; p++) {
+        if (*p == 5) count5++;
+        else if (*p == 4) count4++;
+        else if (*p == 3) count3++;
+        else if (*p == 2) count2++;
+    }
+}
